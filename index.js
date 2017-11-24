@@ -10,6 +10,6 @@ function preload() {
 function setup() {
   for (i in sketches) {
     var link = createA('sketch.html?sketch=' + sketches[i].name, sketches[i].name).class('sketchLink');
-    link.position(50, 30 + (i * 40));
+    link.position(50, 30 + (i * 80));
   }
 }
