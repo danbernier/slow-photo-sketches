@@ -10,7 +10,8 @@ function inCountdown(drawFn) {
     pop();
   }
   else {
-    drawFn();
+    var progress = (millis() - this.countdownStart - 5000) / 30000.0;
+    drawFn(progress);
   }
 }
 

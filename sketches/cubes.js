@@ -7,10 +7,9 @@ function setup() {
 }
 
 function draw() {
-  inCountdown(function() {
+  inCountdown(function(progress) {
     // Say we want a row of red cubes. How about 10 of them, over 30 seconds?
     // Then we should display about 1 every 3 seconds.
-    var progress = millis() / 30000.0;
 
     if (progress <= 1) {
       var inSquareProgress = progress % (1.0 / 10);
