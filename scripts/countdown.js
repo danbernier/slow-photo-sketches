@@ -11,7 +11,9 @@ function inCountdown(drawFn) {
   }
   else {
     var progress = (millis() - this.countdownStart - 5000) / 30000.0;
-    drawFn(progress);
+    if (progress <= 1) {
+      drawFn(progress);
+    }
   }
 }
 
