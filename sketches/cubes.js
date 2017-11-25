@@ -14,7 +14,7 @@ function draw() {
     if (progress <= 1) {
       var inSquareProgress = progress % (1.0 / 10);
       if (inSquareProgress > 0.035 && inSquareProgress < 0.065) {
-        rect(width/2, height/2, 450, 450);
+        rect(width/2, height/2, 600, 600);
       }
       else {
         background(0);
